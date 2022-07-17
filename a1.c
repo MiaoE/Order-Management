@@ -361,6 +361,6 @@ void print_receipt(Order* order, Menu* menu){
 	
 	fprintf(stdout, "Subtotal: \t %.2f\n", order_subtotal);
 	fprintf(stdout, "               -------\n");
-	fprintf(stdout, "Tax %.2f%%: \t$%.2f\n", TAX_RATE / 100.0, order_total);
+	fprintf(stdout, "Tax %.2d%%: \t$%.2f\n", TAX_RATE, order_total);
 	fprintf(stdout, "              ========\n");
 }
